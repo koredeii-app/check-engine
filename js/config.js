@@ -87,7 +87,7 @@ const APP_CONFIG = {
   // 結果画面の行動ボタン
   actionButton: {
     text: "相談先を探す",
-    url: "https://example.com"
+    url: "https://koredeii-app.github.io/care-00/"
   },
 
   // 結果画面に表示する注意書き
