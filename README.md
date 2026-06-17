@@ -24,6 +24,18 @@
 └─ assets/           … 画像など（OGP画像・アイコン等）
 ```
 
+## 新しい診断テーマの企画（サブエージェント）
+
+新しい診断アプリのテーマ決め〜質問作成〜安全レビュー〜config.js生成は、
+[CLAUDE.md](CLAUDE.md)（PM役）と `.claude/agents/` 配下の4つのサブエージェントに依頼できる。
+
+- `diagnosis-planner` … 診断企画（タイトル・ターゲット・検索キーワード・推奨アクション）
+- `question-writer` … 質問10〜15問・スコア設計・結果区分の作成
+- `legal-safety-reviewer` … 医療診断・法的判断にならないかの安全レビュー
+- `config-generator` … 確定内容をAPP_CONFIG形式のJavaScriptに変換
+
+詳細な進行手順・品質基準は [CLAUDE.md](CLAUDE.md) を参照。
+
 ## 新しいチェックアプリを作る方法
 
 1. `index.html` / `css/style.css` / `js/app.js` / `assets/` をコピーして新しいフォルダを作る
